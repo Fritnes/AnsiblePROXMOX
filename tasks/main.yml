@@ -1,5 +1,5 @@
 ---
-# tasks file for Ansible_Base
+# tasks file for AnsiblePROXMOX
 
 - name: Remove specified repository from sources list
   apt_repository:
@@ -28,3 +28,6 @@
     - zip
     - htop
     state: latest
+
+- name: Dependonsi Debian
+  include: "f2b.yml"
